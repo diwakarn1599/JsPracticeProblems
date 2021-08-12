@@ -22,6 +22,7 @@ while(count<2)
 //console.log(`Sum of two dicerolls is ${sum}`);
 
 */
+/*
 //Uc4
 //intialising variables
 
@@ -38,6 +39,7 @@ while(count<5)
 }
 console.log(`Sum of 5 two digits number is = ${sum}`);
 console.log(`Average of the sum of the 5 two digits number is = ${sum/5}`);
+*/
 /*
 //Uc5
 console.log("Unit Conversion");
