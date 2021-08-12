@@ -24,13 +24,13 @@ while(count<2)
 */
 //Uc4
 //intialising variables
-/*
+
 let twoDigNum;
-count=0;
-sum=0;
+let count=0;
+let sum=0;
 while(count<5)
 {
-    twoDigNum = Math.floor(Math.random() *100);
+    twoDigNum = Math.floor(Math.random() * 90 + 10);
     console.log(`Number = ${twoDigNum}`);
     //addinng random digits
     sum +=twoDigNum;
@@ -38,13 +38,13 @@ while(count<5)
 }
 console.log(`Sum of 5 two digits number is = ${sum}`);
 console.log(`Average of the sum of the 5 two digits number is = ${sum/5}`);
-*/
+/*
 //Uc5
 console.log("Unit Conversion");
 //gets input as random number
-let inches = Math.floor(Math.random() *100);
+let inches = Math.floor(Math.random() * 90 + 10);
 //tfixed converts value into string and show upto specified decimal places
-//console.log(`${inches} inche(s) = ${(inches/12).toFixed(2)} feet`);
+console.log(`${inches} inche(s) = ${(inches/12).toFixed(2)} feet`);
 
 //convert feet to meter
 let len = 60/3.281;//divide lenght by 3.281 to convert feet to meter
@@ -57,3 +57,4 @@ let totalArea = area*25;
 let areaInAcre = (totalArea/4047).toFixed(2);
 console.log(`len = ${len} \nbreadth ${breadth} \narea = ${area} \nTotal Area of 25 plots = ${totalArea}`);
 console.log(`Area of 25 plots are ${areaInAcre} acres`);
+*/
