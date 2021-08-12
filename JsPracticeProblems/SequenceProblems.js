@@ -1,15 +1,15 @@
 "use strict";
 //Uc1
 //genrate random value b/w 0-9
-let randomValue = Math.floor(Math.random() *10); 
+//let randomValue = Math.floor(Math.random() *10); 
 //console.log(randomValue);
 
 //Uc2
 //dice roll b/w 1-6
-let diceRoll;
-diceRoll = (Math.floor(Math.random() *10)%6)+1;
+//let diceRoll;
+//diceRoll = (Math.floor(Math.random() *10)%6)+1;
 //console.log(diceRoll);
-
+/*
 //Uc3
 let count =0,sum=0;
 while(count<2)
@@ -21,8 +21,10 @@ while(count<2)
 }
 //console.log(`Sum of two dicerolls is ${sum}`);
 
+*/
 //Uc4
 //intialising variables
+/*
 let twoDigNum;
 count=0;
 sum=0;
@@ -36,3 +38,22 @@ while(count<5)
 }
 console.log(`Sum of 5 two digits number is = ${sum}`);
 console.log(`Average of the sum of the 5 two digits number is = ${sum/5}`);
+*/
+//Uc5
+console.log("Unit Conversion");
+//gets input as random number
+let inches = Math.floor(Math.random() *100);
+//tfixed converts value into string and show upto specified decimal places
+//console.log(`${inches} inche(s) = ${(inches/12).toFixed(2)} feet`);
+
+//convert feet to meter
+let len = 60/3.281;//divide lenght by 3.281 to convert feet to meter
+let breadth = 40/3.281;
+//formula for rectangle area
+let area = len*breadth;
+//calculate for 25 plots
+let totalArea = area*25;
+//formula for converting squaremeter to area
+let areaInAcre = (totalArea/4047).toFixed(2);
+console.log(`len = ${len} \nbreadth ${breadth} \narea = ${area} \nTotal Area of 25 plots = ${totalArea}`);
+console.log(`Area of 25 plots are ${areaInAcre} acres`);
