@@ -31,8 +31,10 @@ while(i<4)
 console.log(`Max = ${max} \nMin = ${min}`);
 */
 //----------------------------------------------UC 2 -------------------------------------------------------
+/*
 function checkMonth()
 {
+    //get input from console using prompt
     var day = parseInt( prompt('Enter the day?'));
     var month = parseInt(prompt('Enter the month in number?'));
         switch(month)
@@ -68,5 +70,32 @@ function checkMonth()
 }
 
 console.log(checkMonth()?"Valid":"Invalid");
-
-
+*/
+/* -------------------------------UC3---------------------------------------------- */
+function checkLeapYear()
+{
+    //get input from console using prompt
+    var year = prompt('Enter the year?');
+    //check lenggth of year is 4 or not
+    if(year.length ==4)
+    {
+        //convert to integer
+        let n  = parseInt(year);
+        //validate its leap year or not
+        if (n % 400 == 0)
+            return true;
+        else if (n % 100 == 0)
+            return false;
+        else if (n % 4 == 0)
+            return true;
+        else
+            return false;
+    }
+    else
+    {
+        //recusrsively call
+        console.log("Enter the correct year");
+        checkLeapYear();
+    }
+}
+console.log(checkLeapYear()?"LeapYear":"Not Leap Year");
