@@ -72,6 +72,7 @@ function checkMonth()
 console.log(checkMonth()?"Valid":"Invalid");
 */
 /* -------------------------------UC3---------------------------------------------- */
+/*
 function checkLeapYear()
 {
     //get input from console using prompt
@@ -99,3 +100,13 @@ function checkLeapYear()
     }
 }
 console.log(checkLeapYear()?"LeapYear":"Not Leap Year");
+*/
+/* ----------------------------------------Uc4------------------------------------------- */
+//function to get coin flip
+function getCoinFlip()
+{
+    return Math.floor((Math.random() * 10))%2;
+    //returns either 0 or 1
+}
+//0 is head , 1 is tail
+console.log(getCoinFlip()==0?"Head":"Tail");
