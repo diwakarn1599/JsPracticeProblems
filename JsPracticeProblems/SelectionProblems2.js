@@ -49,6 +49,7 @@ else
 }
 */
 //---------------------------------------------UC2-------------------------------------
+/**
 const num = parseInt(prompt('Enter the day in number \nEx- 1.Sunday,2.Monday,...?'));
 if(num==1)
 {
@@ -82,3 +83,23 @@ else
 {
     console.log("Enter the correct number");
 }
+ */
+//---------------------------------------------------UC3---------------------------------------------
+const num = parseInt(prompt('Enter the number?'));
+if(num==1)
+    console.log("One");
+else if(num==10)
+    console.log("Ten");
+else if(num==100)
+    console.log("Hundred");
+else if(num==1000)
+    console.log("Thousand");
+else if(num==10000)
+    console.log("1 Lakh");
+else if(num==1000000)
+    console.log("Ten Lakh");
+else if(num==10000000)
+    console.log("Crore");
+else
+    console.log("Enter correct number");
+    
