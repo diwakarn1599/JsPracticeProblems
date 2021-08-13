@@ -1,4 +1,5 @@
 //----------------------------------UC1--------------------------------------------
+
 const prompt = require('prompt-sync')();
 /*
 const num = parseInt(prompt('Enter the number?'));
@@ -68,3 +69,5 @@ switch(num)
         console.log("Enter correct number");
         break;
 }
+
+     
