@@ -32,7 +32,7 @@ else
 //------------------------------------------------UC3---------------------------------------------------------
 //let n = parseInt(prompt('Enter the value of n?'));
 //function to check whether number is prime or not
-/*
+
 let checkPrime = (num) =>
 {
     let flag=0;
@@ -56,6 +56,7 @@ let checkPrime = (num) =>
 
 //console.log(checkPrime(n)?`${n} is Prime number`:`${n} is not a prime number`);
 //--------------------------------------------------------Uc4------------------------------------------------------
+/*
 //start range
 let startRange = parseInt(prompt('Enter the start range?'));
 //end range
@@ -65,6 +66,7 @@ for(let i=startRange;i<=endRange;i++)
     console.log(checkPrime(i)?`${i} is Prime number`:`${i} is not a prime number`);
 */
 //-------------------------------------------------------Uc5--------------------------------------------------------
+/*
 let n = parseInt(prompt('Enter the value of n?'));
 if(n>=0)
 {
@@ -76,3 +78,12 @@ if(n>=0)
 }
 else
     console.log('Value of n should not be negative');
+*/
+//-------------------------------------------------------Uc6-----------------------------------------------------------
+let n = parseInt(prompt('Enter the value of n?'));
+let num = n;
+//loop to find prime factors
+for(let i=1;i<=n;i++)
+    if(num%i==0)
+        console.log(checkPrime(i)?`${i} is Prime factor`:``);
+
