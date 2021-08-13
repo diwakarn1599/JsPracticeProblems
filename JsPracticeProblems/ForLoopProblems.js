@@ -30,8 +30,8 @@ else
 }
 */
 //------------------------------------------------UC3---------------------------------------------------------
-let n = parseInt(prompt('Enter the value of n?'));
-
+//let n = parseInt(prompt('Enter the value of n?'));
+//function to check whether number is prime or not
 let checkPrime = (num) =>
 {
     let flag=0;
@@ -53,4 +53,12 @@ let checkPrime = (num) =>
         
 }
 
-console.log(checkPrime(n)?`${n} is Prime number`:`${n} is not a prime number`);
+//console.log(checkPrime(n)?`${n} is Prime number`:`${n} is not a prime number`);
+//--------------------------------------------------------Uc4------------------------------------------------------
+//start range
+let startRange = parseInt(prompt('Enter the start range?'));
+//end range
+let endRange = parseInt(prompt('Enter the end range?'));
+//loop to find the primenumbers within range
+for(let i=startRange;i<=endRange;i++)
+    console.log(checkPrime(i)?`${i} is Prime number`:`${i} is not a prime number`);
