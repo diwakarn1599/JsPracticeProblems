@@ -32,6 +32,7 @@ else
 //------------------------------------------------UC3---------------------------------------------------------
 //let n = parseInt(prompt('Enter the value of n?'));
 //function to check whether number is prime or not
+/*
 let checkPrime = (num) =>
 {
     let flag=0;
@@ -62,3 +63,16 @@ let endRange = parseInt(prompt('Enter the end range?'));
 //loop to find the primenumbers within range
 for(let i=startRange;i<=endRange;i++)
     console.log(checkPrime(i)?`${i} is Prime number`:`${i} is not a prime number`);
+*/
+//-------------------------------------------------------Uc5--------------------------------------------------------
+let n = parseInt(prompt('Enter the value of n?'));
+if(n>=0)
+{
+    let fact=1;
+    //loop to find factorial of given number
+    for(let i=1;i<=n;i++)
+        fact *= i;
+    console.log(`Factorial of ${n} is ${fact}`);
+}
+else
+    console.log('Value of n should not be negative');
