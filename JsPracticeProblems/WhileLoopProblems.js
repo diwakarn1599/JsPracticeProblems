@@ -56,6 +56,7 @@ if (first == last)
 }
 */
 //--------------------------------------------UC3---------------------------------------
+/*
 var head=0,tail=0;
 var flipCoin;
 // var getFlip = () =>
@@ -79,4 +80,24 @@ while(head<11 && tail<11)
 }
 console.log(`Headcount:${head}\tTailcount:${tail}`);
 console.log(head==11?'Winner is Head':'Winner is Tail');
+*/
+//----------------------------------------------------UC4--------------------------------
+//initalizing user amount
+let Amount=100;
+let bet=0,win=0;
+while(userAmount<200 && userAmount>0)
+{
+    let res=Math.floor(Math.random()* 10)%2;//get 0 or 1 ,indicating 1 for win and 0 for loss
+    if(res==1)
+    {
+        Amount++;
+        win++;
+    }
+    else
+        Amount--;
+    //get number of bets
+    bet++;
+}
+console.log(`User amount =${Amount}\nNumber of Wins ${win}\nTotal Bets made ${bet}`);
 
+console.log(userAmount==200?"User won the Match":"User lost the Match");
