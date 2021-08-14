@@ -37,10 +37,10 @@ let ConvertTemperatures = () =>
 //ConvertTemperatures();
 //----------------------------------------UC2-------------------------------------------
 //function to check whether the number palindrome or not
-let checkPalindrome = () =>
+let checkPalindrome = (n) =>
 {
         var r, temp, rev=0;
-		var n = parseInt(prompt("Enter the number\n"));
+		//var n = parseInt(prompt("Enter the number\n"));
 
 		temp = n;
 		while(n>0)
@@ -50,9 +50,33 @@ let checkPalindrome = () =>
 			n = parseInt(n/10);
 		}
 		if(rev==temp)
-		    console.log(`${temp} is palindrome`);
+		    return (`${temp} is palindrome`);
 		else
-		    console.log(`${temp} is not a palindrome`);
+		    return (`${temp} is not a palindrome`);
 		
 }
-checkPalindrome();
+//checkPalindrome();
+//---------------------------------UC3-------------------------------------------------------
+let number  = parseInt(prompt("Enter the number\n"));
+//function to check whether number is prime or not
+let checkPrime = (num) =>
+{
+    let flag=0;
+    if(num==2)
+        console.log(`${num} is prime number and ${checkPalindrome(num)}`);
+    else if (num % 2 == 0)
+        return false;
+    else
+        for(let i=3;i*i<=num;i++)
+            if(num%i==0)
+            {
+                flag=1;
+                break;
+            }
+        if(flag==1)
+            return false;
+        else
+            console.log(`${num} is prime number and ${checkPalindrome(num)}`);;
+        
+}
+checkPrime(number);
