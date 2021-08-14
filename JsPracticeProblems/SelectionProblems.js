@@ -109,4 +109,6 @@ function getCoinFlip()
     //returns either 0 or 1
 }
 //0 is head , 1 is tail
-console.log(getCoinFlip()==0?"Head":"Tail");
+//console.log(getCoinFlip()==0?"Head":"Tail");
+
+//exports.flip = getCoinFlip();

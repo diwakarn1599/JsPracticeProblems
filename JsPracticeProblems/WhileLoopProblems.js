@@ -2,6 +2,7 @@
 "use strict";
 //initialising the prompt
 const prompt = require('prompt-sync')();
+//var coinFlip = require('./SelectionProblems');
 /**
 //get input from the user
 var n = parseInt( prompt('Enter the power?'));
@@ -16,6 +17,7 @@ do{
 //given 128 because do while runs 1 more time
  */
 //-----------------------------------Uc2--------------------------
+/*
 var first = 0,last=100;
 var found = false;
 //function to find magic number
@@ -52,4 +54,29 @@ if (first == last)
     console.log(`Your number is ${first}`);
     
 }
+*/
+//--------------------------------------------UC3---------------------------------------
+var head=0,tail=0;
+var flipCoin;
+// var getFlip = () =>
+// {
+//     var res=coinFlip.flip;
+//     return res;
+// }
+while(head<11 && tail<11)
+{
+    flipCoin = Math.floor(Math.random()*10)%2;//return either 0 or 1
+    if(flipCoin==0)
+    {
+        console.log("Head")
+        head++;    
+    }
+    else
+    {
+        console.log("Tail")
+        tail++;
+    }
+}
+console.log(`Headcount:${head}\tTailcount:${tail}`);
+console.log(head==11?'Winner is Head':'Winner is Tail');
 
