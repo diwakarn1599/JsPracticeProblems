@@ -46,8 +46,19 @@ let findLargestAndSmallest = () =>
         else if(elementArray[i]<secondSmallest && elementArray[i]!=firstSmallest)
             secondSmallest=elementArray[i];
     }
+    console.log("Uc1");
     console.log(secondSmallest != 1000?`Second smallest = ${secondSmallest}`:`There is no second smallest`);
     console.log(secondlargest != 0?`Second largest = ${secondlargest}`:`There is no seconnd largest`);
 
 }
 findLargestAndSmallest();
+//-----------------------------------Uc2-----------------------
+let findLargestAndSmallestSorting = () =>
+{
+    elementArray.sort();
+    let len = elementArray.length;
+    console.log(len>=1?`Second smallest = ${elementArray[1]}`:`Index out of range`);
+    console.log(`Second largest = ${elementArray[len-2]}`);
+}
+console.log("Uc2- Using sorting");
+findLargestAndSmallestSorting();
