@@ -62,3 +62,42 @@ let findLargestAndSmallestSorting = () =>
 }
 console.log("Uc2- Using sorting");
 findLargestAndSmallestSorting();
+
+//-------------------------------Uc3------------------------------------
+//Function to check whther number is prime or not
+let checkPrime = (num) =>
+{
+    let flag=0;
+    if(num==2)
+        return true;
+    else if (num % 2 == 0)
+        return false;
+    else
+        for(let i=3;i*i<=num;i++)
+            if(num%i==0)
+            {
+                flag=1;
+                break;
+            }
+        if(flag==1)
+            return false;
+        else
+            return true;
+        
+}
+//function to find prime factors
+let FindPrimeFactors = () =>
+{
+    //intiialise prime factor array
+    let primeFactorsArr = new Array();
+    let n = parseInt(prompt('Enter the value of n?'));
+    let num = n;
+    //loop to find prime factors
+    for(let i=1;i<=n;i++)
+        if(num%i==0)
+            if(checkPrime(i))//check number is prime
+                primeFactorsArr.push(i);//push into array
+    if(primeFactorsArr.length>0)
+        console.log(primeFactorsArr.toString());
+}
+FindPrimeFactors();
