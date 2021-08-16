@@ -51,7 +51,7 @@ let findLargestAndSmallest = () =>
     console.log(secondlargest != 0?`Second largest = ${secondlargest}`:`There is no seconnd largest`);
 
 }
-findLargestAndSmallest();
+//findLargestAndSmallest();
 //-----------------------------------Uc2-----------------------
 let findLargestAndSmallestSorting = () =>
 {
@@ -61,7 +61,7 @@ let findLargestAndSmallestSorting = () =>
     console.log(`Second largest = ${elementArray[len-2]}`);
 }
 console.log("Uc2- Using sorting");
-findLargestAndSmallestSorting();
+//findLargestAndSmallestSorting();
 
 //-------------------------------Uc3------------------------------------
 //Function to check whther number is prime or not
@@ -100,4 +100,47 @@ let FindPrimeFactors = () =>
     if(primeFactorsArr.length>0)
         console.log(primeFactorsArr.toString());
 }
-FindPrimeFactors();
+//FindPrimeFactors();
+//-----------------------------------------------------UC4------------------------------------------------
+//SUM of three digits adds to zero
+let sumToZero = () =>
+{
+    console.log("Program to find sum of three digits add to zero");
+    let digitsArr = [0, -1, 2, -3, 1];
+    let n = digitsArr.length;
+    let found = false;
+    //check for 3 numbers sum to zero
+    for(let i=0;i<n-2;i++)
+    {
+        for(let j=i+1;j<n-1;j++)
+        {
+            for(let k=j+1;k<n;k++)
+            {
+                if(digitsArr[i]+digitsArr[j]+digitsArr[k] ==0)
+                {
+                    console.log(`${digitsArr[i]}, ${digitsArr[j]}, ${digitsArr[k]}`);
+                    found=true;
+                }
+            }
+        }
+    }
+    if(found==false)
+    {
+        console.log("Not Exists");
+    }
+}
+sumToZero();
+//---------------------------------------------------------Uc5------------------------------------
+//function to get repeated number
+let getRepeatedNumber = () =>
+{
+    console.log("Uc5 - repeated numbers");
+    let numArr = new Array();
+    for(let i=1;i<=100;i++)
+        if(i%11==0)
+            numArr.push(i);
+    console.log("Repeated numbers are:");
+    for(let x of numArr)
+        console.log(x);
+}
+getRepeatedNumber();
